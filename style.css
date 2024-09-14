@@ -1,0 +1,7 @@
+/* classe → tem mais de um (é sempre com um .)
+id → único (é sempre com uma #)*/
+
+#container {
+	display: flex;
+	flex-direction: row;
+}
