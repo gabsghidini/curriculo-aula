@@ -5,3 +5,8 @@ id → único (é sempre com uma #)*/
 	display: flex;
 	flex-direction: row;
 }
+
+.experiencia {
+	border-style: dotted;
+	border-color: blue;
+}
