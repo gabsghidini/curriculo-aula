@@ -1,5 +1,8 @@
 /* classe → tem mais de um (é sempre com um .)
 id → único (é sempre com uma #)*/
+body {
+	font-family: "Inter", sans-serif;
+}
 
 #container {
 	display: flex;
@@ -9,4 +12,62 @@ id → único (é sempre com uma #)*/
 .experiencia {
 	border-style: dotted;
 	border-color: blue;
+}
+
+#container > aside > picture > img {
+	width: 15rem;
+	height: 15rem;
+	border: 1rem solid white;
+	border-radius: 50%;
+	margin: 1rem 0;
+
+	/*
+		margin: ↑ → ↓ ←
+		margin: ↑↓  ←→
+		margin-top: ↑
+		margin-right: →
+		margin-bottom: ↓
+		margin-left: ←
+	
+	*/
+}
+
+.image-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.side-bar {
+	background-color: #cbcaff;
+}
+
+.info {
+	display: flex;
+	flex-direction: column;
+
+	padding: 1rem 3rem;
+}
+
+.info > h3 {
+	font-size: 2rem;
+	margin: 1rem 0;
+}
+
+.info > a {
+	text-decoration: none;
+	color: black;
+}
+
+.info > ul {
+	margin: 0;
+	padding: 0;
+}
+
+.info > ul > li {
+	list-style-type: none;
+}
+
+.info > p {
+	margin: 0;
 }
