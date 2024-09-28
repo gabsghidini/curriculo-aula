@@ -9,9 +9,10 @@ body {
 	flex-direction: row;
 }
 
-.experiencia {
-	border-style: dotted;
-	border-color: blue;
+@media only screen and (max-width: 360px) {
+	#container {
+		flex-direction: column;
+	}
 }
 
 #container > aside > picture > img {
@@ -49,6 +50,31 @@ body {
 	padding: 1rem 3rem;
 }
 
+.title-info {
+	display: none;
+	font-size: 2rem;
+	margin: 0;
+}
+
+.title-position {
+	display: none;
+	font-size: 1.25rem;
+}
+
+@media only screen and (max-width: 360px) {
+	.title-info {
+		display: flex;
+	}
+
+	.title-position {
+		display: flex;
+	}
+
+	.title {
+		display: none;
+	}
+}
+
 .info > h3 {
 	font-size: 2rem;
 	margin: 1rem 0;
@@ -70,4 +96,54 @@ body {
 
 .info > p {
 	margin: 0;
+}
+
+/* MAIN SECTION */
+#main-section {
+	padding: 2rem;
+}
+
+.title {
+	color: gray;
+	font-size: 8rem;
+	margin: 2rem 0 0 0;
+	text-align: center;
+}
+
+.title::after {
+	content: "";
+	display: inline-block;
+	width: 70%;
+	height: 1rem;
+	background-color: #cbcaff;
+
+	text-align: center;
+}
+
+.title > span {
+	color: black;
+}
+
+.soft-skills > h2 {
+	font-size: 2rem;
+	margin: 0;
+}
+
+.experiencia > h4 {
+	font-size: 2rem;
+	font-weight: 400;
+	margin: 0.5rem 0;
+}
+
+.experiencia > h5 {
+	font-size: 1.25rem;
+	font-weight: 400;
+	margin: 0;
+}
+
+.experiencia > ul {
+	display: flex;
+	flex-direction: column;
+
+	gap: 0.5rem;
 }
