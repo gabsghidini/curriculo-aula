@@ -9,6 +9,12 @@ body {
 	flex-direction: row;
 }
 
+@media only screen and (max-width: 360px) {
+	#container {
+		flex-direction: column;
+	}
+}
+
 #container > aside > picture > img {
 	width: 15rem;
 	height: 15rem;
@@ -42,6 +48,31 @@ body {
 	flex-direction: column;
 
 	padding: 1rem 3rem;
+}
+
+.title-info {
+	display: none;
+	font-size: 2rem;
+	margin: 0;
+}
+
+.title-position {
+	display: none;
+	font-size: 1.25rem;
+}
+
+@media only screen and (max-width: 360px) {
+	.title-info {
+		display: flex;
+	}
+
+	.title-position {
+		display: flex;
+	}
+
+	.title {
+		display: none;
+	}
 }
 
 .info > h3 {
