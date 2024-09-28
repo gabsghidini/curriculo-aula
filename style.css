@@ -9,11 +9,6 @@ body {
 	flex-direction: row;
 }
 
-.experiencia {
-	border-style: dotted;
-	border-color: blue;
-}
-
 #container > aside > picture > img {
 	width: 15rem;
 	height: 15rem;
@@ -70,4 +65,54 @@ body {
 
 .info > p {
 	margin: 0;
+}
+
+/* MAIN SECTION */
+#main-section {
+	padding: 2rem;
+}
+
+.title {
+	color: gray;
+	font-size: 8rem;
+	margin: 2rem 0 0 0;
+	text-align: center;
+}
+
+.title::after {
+	content: "";
+	display: inline-block;
+	width: 70%;
+	height: 1rem;
+	background-color: #cbcaff;
+
+	text-align: center;
+}
+
+.title > span {
+	color: black;
+}
+
+.soft-skills > h2 {
+	font-size: 2rem;
+	margin: 0;
+}
+
+.experiencia > h4 {
+	font-size: 2rem;
+	font-weight: 400;
+	margin: 0.5rem 0;
+}
+
+.experiencia > h5 {
+	font-size: 1.25rem;
+	font-weight: 400;
+	margin: 0;
+}
+
+.experiencia > ul {
+	display: flex;
+	flex-direction: column;
+
+	gap: 0.5rem;
 }
